@@ -1,85 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <link rel="stylesheet" href="stylesheet.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boaz Emmanuel Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<title>My Portifolio Website</title>
 <body>
-<header>
-	<nav>
-		<ul>
-			<li><a href="#about" >About Me</a></li>
-			<li><a href="#project" >My Projects</a></li>
-			<li><a href="#contact" >Contact Me</a></li>
-		</ul>
-	</nav>
 
+<header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
-	<section id=about>
-		<h2>About Me</h2>
-			<p>A recent Computer Science graduate from the University of Dodoma, passionate about leveraging technology to solve problems and improve organizational efficiency. Seeking an IT position where I can apply my skills in system management, network troubleshooting, and technical support while contributing to institutional growth
-		</p>
-	</section>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>A recent Computer Science graduate from the University of Dodoma, passionate about leveraging technology to solve problems and improve organizational efficiency. Seeking an IT position where I can apply my skills in system management, network troubleshooting, and technical support while contributing to institutional growth.</p>
+    </section>
 
-	<section id="project">
-		<h2>My Accomplished Projects</h2>
-		<div class=project-grid>
-			<div class= project>
-				<h3>My first project</h3>
-				<p>The first project that we did it serious was the IPT project, we where five students</p>
-				<p>title of the project was: Hestel managements for Udom unersity</p>
-				<p>It was seccess for 60% and above</p>
-			</div>
-					
-			<div class="project">
-				<h3>My second project.</h3>
-					<p>The second project that I did I was in my self, personal project</p>
-					<p>Title of the project was the develop of the model tha will predict the kind of insect that attack 						sorghum in the farm and leads to difficiency of the yields</p>
-					<p>It was success for 80% and above.</p>
-			</div>
-			<div class="project">
-				<h3>My third project.</h3>
-					<p>The third project that I did, we were five students, group project FYP</p>
-					<p>The title of the project was, Intelligent sorghum  insect detection system using machine 							learning</p>
-					<p>The project was successfull for 90% and lead us to become a graduate</p>	
-			</div>		
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Accomplished Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>First Project</h3>
+                <p>Group project: Hostel Management System for University of Dodoma. Team of 5 students. Achieved 60%+ success.</p>
+            </div>
+            <div class="project">
+                <h3>Second Project</h3>
+                <p>Personal project: Model to predict insect attacks on sorghum, improving yield efficiency. Achieved 80%+ success.</p>
+            </div>
+            <div class="project">
+                <h3>Third Project</h3>
+                <p>Group project: Intelligent Sorghum Insect Detection System using Machine Learning. Achieved 90% success, contributed to graduation.</p>
+            </div>
+        </div>
+    </section>
 
-		</div>
-</section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
 
-        <section id="contact">
-            <h1>Contact</h1>
-            <form action="#" method="POST">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea><br><br>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea><br><br>
-
-                <button type="submit">Send</button>
-            </form>
-        </section>
-
-
+            <button type="submit">Send</button>
+        </form>
+    </section>
 </main>
 
 <footer>
-        <p>Connect with me:</p>
-        <ul>
-            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com" target="_blank">GitHub</a></li>
-            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-        </ul>
-        <p>&copy; 2024 Boaz Emmanuel. All Rights Reserved.</p>
-    </footer>
-
+    <p>Connect with me:</p>
+    <ul>
+        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+    </ul>
+    <p>&copy; 2025 Boaz Emmanuel. All Rights Reserved.</p>
+</footer>
 
 </body>
-
 </html>
