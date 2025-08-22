@@ -1,69 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        #respond{
-        position: relative;
-        animation: moving-right 3s infinite alternate;
-         }
-    
-    @keyframes moving-right{
-        from {left: 0;}
-        to {left: 100px;}
-        
-    }
+ <link rel="stylesheet" href="stylesheet.css">
 
-    .slider{
-    display: flex;
-    overflow: hidden;
-    position:relative;
-    height: 300px;
-    width: 300px;
-    position:absolute;
-    text-align: center;
-    top:0;
-    bottom: 0;
-    left:0;
-    right: 0;
-    margin:auto;
-    
-    } 
-    
-    .slider img{
-       min-width: 100%;
-       animation: slide 5s infinite;
-    }
-
-    @keyframes slide{
-        0%, 20% {transform: translateX(0);}
-        25%,50%{transform: translateX(-100%);}
-        55%,70%{transform: translateX(-300%);}
-        80%,100%{transform:translateX(-400%)}
-    }
-
-    body{
-        background-image: "C:\\Users\\1304b\\OneDrive\\Pictures\\image\\duck.jpg";
-        background-color:brown;
-    }
-    
-    </style>
 </head>
-<title>image managemet in web site</title>
+<title>My Portifolio Website</title>
 <body>
-    <header><h1>Image Managements!</h1></header>
-    
-    <main>
-        <img id="respond" src="C:\\Users\\1304b\\OneDrive\\Pictures\\image\\sheep.jpg" alt="Descriptions" style=" height:auto; width:300px";>
+<header>
+	<nav>
+		<ul>
+			<li><a href="#about" >About Me</a></li>
+			<li><a href="#project" >My Projects</a></li>
+			<li><a href="#contact" >Contact Me</a></li>
+		</ul>
+	</nav>
 
-        <div class="slider">
-            <img  src="C:\\Users\\1304b\\OneDrive\\Pictures\\image\\sheep.jpg" alt="Descriptions" >
-            <img loading="lazy" src="C:\\Users\\1304b\\OneDrive\\Pictures\\image\\duck.jpg" alt="Sliding image">
-            <img loading="lazy" src="C:\\Users\\1304b\\OneDrive\\Pictures\\image\\duck2.webp" alt="Sliding image">
-            <img loading="lazy" src="C:\\Users\\1304b\\OneDrive\\Pictures\\image\\OIP.jfif" alt="flowering plants">
-            <img loading="lazy" scr="C:\\Users\\1304b\\OneDrive\\Pictures\\image\\mushrooms.webp" alt="sliding image">
-        </div>
-    </main>
+</header>
 
-    <footer></footer>
+<main>
+	<section id=about>
+		<h2>About Me</h2>
+			<p>A recent Computer Science graduate from the University of Dodoma, passionate about leveraging technology to solve problems and improve organizational efficiency. Seeking an IT position where I can apply my skills in system management, network troubleshooting, and technical support while contributing to institutional growth
+		</p>
+	</section>
+
+	<section id="project">
+		<h2>My Accomplished Projects</h2>
+		<div class=project-grid>
+			<div class= project>
+				<h3>My first project</h3>
+				<p>The first project that we did it serious was the IPT project, we where five students</p>
+				<p>title of the project was: Hestel managements for Udom unersity</p>
+				<p>It was seccess for 60% and above</p>
+			</div>
+					
+			<div class="project">
+				<h3>My second project.</h3>
+					<p>The second project that I did I was in my self, personal project</p>
+					<p>Title of the project was the develop of the model tha will predict the kind of insect that attack 						sorghum in the farm and leads to difficiency of the yields</p>
+					<p>It was success for 80% and above.</p>
+			</div>
+			<div class="project">
+				<h3>My third project.</h3>
+					<p>The third project that I did, we were five students, group project FYP</p>
+					<p>The title of the project was, Intelligent sorghum  insect detection system using machine 							learning</p>
+					<p>The project was successfull for 90% and lead us to become a graduate</p>	
+			</div>		
+
+		</div>
+</section>
+
+        <section id="contact">
+            <h1>Contact</h1>
+            <form action="#" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+
+</main>
+
+<footer>
+        <p>Connect with me:</p>
+        <ul>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        </ul>
+        <p>&copy; 2024 Boaz Emmanuel. All Rights Reserved.</p>
+    </footer>
+
+
 </body>
+
 </html>
