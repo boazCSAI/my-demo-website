@@ -47,6 +47,23 @@ section {
     margin: auto;
 }
 
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+}
+
+
 h2 {
     color: #007bff;
     margin-bottom: 1rem;
@@ -130,3 +147,4 @@ html {
         margin: 0.5rem 0;
     }
 }
+
